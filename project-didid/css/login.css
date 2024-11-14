@@ -1,0 +1,151 @@
+/* styles.css */
+body {
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(to right, #3a3a3a, #7b7b7b); /* Gradasi warna yang modern */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #ffffff; /* Warna form lebih cerah */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Shadow yang lebih halus */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.05); /* Efek hover pada form */
+}
+
+h2 {
+    color: #2575fc; /* Warna biru cerah untuk judul */
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ddd; /* Border ringan dan bersih */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Latar belakang input lebih terang */
+    color: #333; /* Warna teks gelap agar lebih mudah dibaca */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #2575fc; /* Fokus warna biru terang */
+    outline: none;
+    background-color: #e6f0ff; /* Warna latar belakang saat fokus */
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2575fc; /* Warna tombol biru cerah */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a11cb; /* Warna tombol berubah saat hover */
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555; /* Warna teks untuk paragraf lebih lembut */
+}
+
+a {
+    color: #2575fc; /* Warna biru untuk link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6a11cb; /* Warna link berubah saat hover */
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input, button {
+        font-size: 15px;
+    }
+}
+
+/* styles.css */
+
+/* styles.css */
+
+/* Show Password Section */
+.show-password {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666; /* Lighter color for text */
+}
+
+.show-password input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: #2575fc; /* Matching with the form's theme */
+}
+
+.show-password label {
+    font-size: 14px;
+    color: #666; /* Color for the label */
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on label */
+.show-password label:hover {
+    color: #2575fc; /* Color changes on hover */
+}
+
+/* Align show password section better in smaller screens */
+@media (max-width: 480px) {
+    .show-password {
+        font-size: 13px; /* Slightly smaller text on mobile */
+    }
+}

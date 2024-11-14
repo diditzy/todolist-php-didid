@@ -1,0 +1,230 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(to right, #3a3a3a, #7b7b7b);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #2C3E50;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-user {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: #2C3E50;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #4A90E2;
+}
+
+table td {
+    background-color: #ffffff;
+}
+
+a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.delete-link {
+    color: #FF6F61;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-link:hover {
+    background-color: #D65D4F;
+}
+
+.overdue {
+    background-color: #FF6F61; /* Red background for overdue tasks */
+    color: white;
+}
+
+.upcoming {
+    background-color: #4CAF50; /* Green background for upcoming tasks */
+    color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: center;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar-user {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input, textarea, button {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+}
+
+.modal-dialog {
+    max-width: 500px;
+    width: 90%;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Centering the modal */
+.modal-dialog-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overdue {
+    color: white;
+    background-color: #e74c3c; /* Red for overdue */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.today {
+    color: white;
+    background-color: #f39c12; /* Yellow for today */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upcoming {
+    color: white;
+    background-color: #2ecc71; /* Green for upcoming */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
